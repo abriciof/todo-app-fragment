@@ -31,6 +31,10 @@
             android:id="@+id/descricoes"
             app:destination="@id/quarto"
             />
+
+        <action
+            android:id="@+id/action_abrir_calendario"
+            app:destination="@id/quinto" />
     </fragment>
 
     <fragment
@@ -58,12 +62,14 @@
     <fragment
         android:id="@+id/quinto"
         android:name="com.abriciof.todolist.QuintoFragment"
-        android:label="@string/app_name"
+        android:label="Calendário de Tarefas"
         tools:layout="@layout/fragment_quinto">
 
         <action
-            android:id="@+id/action_QuintoFragmento_to_PrimeiroFragmento"
-            app:destination="@id/primeiro" />
+            android:id="@+id/action_QuintoFragmento_to_SegundoFragmento"
+            app:destination="@id/segundo" />
+
+
     </fragment>
 
 </navigation>

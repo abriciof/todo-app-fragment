@@ -30,7 +30,7 @@ class QuintoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.botao5.setOnClickListener {
-            findNavController().navigate(R.id.action_QuintoFragmento_to_PrimeiroFragmento)
+            findNavController().navigate(R.id.action_QuintoFragmento_to_SegundoFragmento)
         }
     }
 

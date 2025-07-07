@@ -33,6 +33,10 @@ class SegundoFragment : Fragment() {
             findNavController().navigate(R.id.action_SegundoFragmento_to_TerceiroFragmento)
         }
 
+        binding.botao6.setOnClickListener {
+            findNavController().navigate(R.id.action_abrir_calendario)
+        }
+
         binding.linearLayoutMain.setOnClickListener{
             findNavController().navigate(R.id.descricoes)
 
