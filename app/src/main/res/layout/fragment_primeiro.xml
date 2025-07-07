@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_wallpaper"
+    tools:context=".PrimeiroFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        >
+
+
+        <TextView
+            android:id="@+id/bemvindo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DOTO!"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:textAlignment="center"
+        />
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="seu app de tarefas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bemvindo"
+            app:layout_constraintBottom_toTopOf="@id/botao"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="center"
+
+        />
+
+        <Button
+            android:id="@+id/botao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Minhas tarefas"
+            android:background="@drawable/botao"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/slogan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="25dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
